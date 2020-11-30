@@ -39,7 +39,8 @@
 <p><a href="https://www.kaggle.com/s40523148">https://www.kaggle.com/s40523148</a></p>
 <p><a href="https://www.kaggle.com/s40523148/cp2020w8">https://www.kaggle.com/s40523148/cp2020w8</a></p>
 <p></p>
-<p></p><h2>HW1</h2>
+<p></p>
+<h2>HW1</h2>
 <h4><span>PC Hardware</span></h4>
 <p><span>UNIT 5: Notebooks and Laptops<br/><span>PCH 17: Notebook Features and Components 筆記本功能與組件</span></span></p>
 <h3>Notebook Features and Components 筆記本功能和組件</h3>
@@ -706,5 +707,23 @@
 <p>修理顯示器和卸下擋板時必須小心，以免損壞天線。</p>
 <p>This is especially important since the incorporation of Wireless-n NIC cards in laptops.</p>
 <p>這是非常重要的，因為在筆記本電腦中集成了Wireless-n NIC卡。</p>
-</div>
-</div>
+<p></p>
+<h1>HW2作業二</h1>
+<h4>一乙數列</h4>
+<ol>
+<li class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">urllib.request</code></li>
+<li class="line number1 index0 alt2"><code class="py comments">#導入urllib.request</code></li>
+<li class="line number3 index2 alt2"><code class="py plain">target_url </code><code class="py keyword">=</code> <code class="py string">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</code></li>
+<li class="line number4 index3 alt1"><code class="py comments">#設target_url = "網址"</code></li>
+<li class="line number5 index4 alt2"><code class="py plain">cp1b </code><code class="py keyword">=</code> <code class="py plain">[]</code></li>
+<li class="line number6 index5 alt1"><code class="py comments">#設cp1b=數列</code></li>
+<li class="line number7 index6 alt2"><code class="py keyword">for</code> <code class="py plain">line </code><code class="py keyword">in</code> <code class="py plain">urllib.request.urlopen(target_url):</code></li>
+<li class="line number8 index7 alt1"><code class="py comments">#重複打開target_url的迴圈定義line</code></li>
+<li class="line number9 index8 alt2"><code class="py spaces">    </code><code class="py plain">cp1b.append(</code><code class="py functions">int</code><code class="py plain">(line.decode(</code><code class="py string">'utf-8'</code><code class="py plain">).rstrip()))</code></li>
+<li class="line number10 index9 alt1"><code class="py spaces">    </code><code class="py comments">#把line重新編碼加進cp1b(數列)   註:rstrip()刪除字尾符號</code></li>
+<li class="line number11 index10 alt2"><code class="py functions">print</code><code class="py plain">(cp1b)</code></li>
+<li class="line number12 index11 alt1"><code class="py comments">#印出cp1b</code></li>
+</ol>
+<div class="line number12 index11 alt1"><code class="py comments"></code></div>
+<h4 class="line number12 index11 alt1"><code class="py comments">結果</code></h4>
+<p><code class="py comments"><img alt="" src="/images/index.html"/><img alt="" height="325" src="/images/擷取.PNG" width="1920"/><br/></code></p></div></div>
