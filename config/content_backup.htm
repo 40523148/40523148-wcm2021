@@ -40,10 +40,10 @@
 <p><a href="https://www.kaggle.com/s40523148/cp2020w8">https://www.kaggle.com/s40523148/cp2020w8</a></p>
 <p></p>
 <p></p>
-<h2>HW1</h2>
+<h1>HW1</h1>
 <h4><span>PC Hardware</span></h4>
 <p><span>UNIT 5: Notebooks and Laptops<br/><span>PCH 17: Notebook Features and Components 筆記本功能與組件</span></span></p>
-<h3>Notebook Features and Components 筆記本功能和組件</h3>
+<br/><span>PCH 17:</span>Notebook Features and Components 筆記本功能和組件
 <h4>Overview總覽</h4>
 <p>In this module, we will discuss the terms notebook, laptop, and netbook, and show how all three items are similar in functionality and use.</p>
 <p>在本模塊中，我們將討論筆記本，筆記本電腦和上網本這兩個術語，並說明這三個項目在功能和用途上如何相似。</p>
@@ -119,7 +119,7 @@
 <p> SODIMM is a good option for laptop computers, as it takes up a fraction of the space the dual in-line memory module (DIMM) of a typical desktop computer does.</p>
 <p>SODIMM對於便攜式計算機來說是一個不錯的選擇，因為它僅佔台式計算機雙列直插式內存模塊（DIMM）的一小部分。</p>
 <p><img alt="" height="402" src="/images/image1.png" width="424"/></p>
-<h3>Installing and Configuring Laptop Hardware 安裝和配置筆記本電腦硬件</h3>
+<br/><span>PCH 17:</span>Installing and Configuring Laptop Hardware 安裝和配置筆記本電腦硬件
 <div class="title">
 <p>As a technician, you will be required to install and configure laptop hardware.</p>
 <p>作為技術人員，您將需要安裝和配置筆記本電腦硬件。</p>
@@ -298,7 +298,7 @@
 </tbody>
 </table>
 <p></p>
-<h3>Notebook Features 筆記本功能</h3>
+<br/><span>PCH 17:</span>Notebook Features 筆記本功能
 <div class="title">
 <p>Notebook keyboards have special function keys that do not exist on standard desktop keyboards.</p>
 <p>筆記本電腦鍵盤具有標準台式機鍵盤上不存在的特殊功能鍵。</p>
@@ -708,20 +708,32 @@
 <p>This is especially important since the incorporation of Wireless-n NIC cards in laptops.</p>
 <p>這是非常重要的，因為在筆記本電腦中集成了Wireless-n NIC卡。</p>
 <p></p>
-<h1>HW2作業二</h1>
+<h1>HW2</h1>
 <h4>一乙數列</h4>
-<p><code class="py keyword">import</code> <code class="py plain">urllib.request</code></p>
-<p><code class="py comments">#導入urllib.request</code></p>
-<p><code class="py plain">target_url </code><code class="py keyword">=</code> <code class="py string">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</code></p>
-<p><code class="py comments">#設target_url = "網址"</code></p>
-<p><code class="py plain">cp1b </code><code class="py keyword">=</code> <code class="py plain">[]</code></p>
-<p><code class="py comments">#設cp1b=數列</code></p>
-<p><code class="py keyword">for</code> <code class="py plain">line </code><code class="py keyword">in</code> <code class="py plain">urllib.request.urlopen(target_url):</code></p>
-<p><code class="py comments">#重複打開target_url的迴圈定義line</code></p>
-<p><code class="py spaces">    </code><code class="py plain">cp1b.append(</code><code class="py functions">int</code><code class="py plain">(line.decode(</code><code class="py string">'utf-8'</code><code class="py plain">).rstrip()))</code></p>
-<p><code class="py spaces">    </code><code class="py comments">#把line重新編碼加進cp1b(數列)   註:rstrip()刪除字尾符號</code></p>
-<p><code class="py functions">print</code><code class="py plain">(cp1b)</code></p>
-<p><code class="py comments">#印出cp1b</code></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+
+#導入urllib.request
+
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+
+#設target_url = "網址"
+
+cp1b = []
+
+#設cp1b=數列
+
+for line in urllib.request.urlopen(target_url):
+
+#重複打開target_url的迴圈定義line
+
+    cp1b.append(int(line.decode('utf-8').rstrip()))
+
+    #把line重新編碼加進cp1b(數列)   註:rstrip()刪除字尾符號
+
+print(cp1b)
+
+#印出cp1b</pre>
+<p><br/><br/></p>
 <div class="line number12 index11 alt1"><code class="py comments"></code></div>
 <div class="line number12 index11 alt1"><code class="py comments"></code></div>
 <div class="line number12 index11 alt1"><code class="py comments"></code></div>

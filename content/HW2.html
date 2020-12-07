@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li class='has-children'><a href='topic.html'>topic</a><ul class='dropdown'><li><a href='更改網誌.html'>更改網誌</a><li><a href='Kaggle.html'>Kaggle</a></li></ul><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='Notebook Features and Components 筆記本功能和組件.html'>Notebook Features and Components 筆記本功能和組件</a><ul class='dropdown'><li><a href='Installing and Configuring Laptop Hardware 安裝和配置筆記本電腦硬件.html'>Installing and Configuring Laptop Hardware 安裝和配置筆記本電腦硬件</a><li><a href='Notebook Features 筆記本功能.html'>Notebook Features 筆記本功能</a></li></li></ul></ul><li><a href='HW2作業二.html'>HW2作業二</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li class='has-children'><a href='topic.html'>topic</a><ul class='dropdown'><li><a href='更改網誌.html'>更改網誌</a><li><a href='Kaggle.html'>Kaggle</a></li></ul><li><a href='HW1.html'>HW1</a><li><a href='HW2.html'>HW2</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,27 +133,37 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Notebook Features 筆記本功能 << <a href='Notebook Features 筆記本功能.html'>Previous</a> <br /><h1>HW2作業二</h1>
+    <div id="tipue_search_content">HW1 << <a href='HW1.html'>Previous</a> <br /><h1>HW2</h1>
 <h4>一乙數列</h4>
-<p><code class="py keyword">import</code> <code class="py plain">urllib.request</code></p>
-<p><code class="py comments">#導入urllib.request</code></p>
-<p><code class="py plain">target_url </code><code class="py keyword">=</code> <code class="py string">"https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</code></p>
-<p><code class="py comments">#設target_url = "網址"</code></p>
-<p><code class="py plain">cp1b </code><code class="py keyword">=</code> <code class="py plain">[]</code></p>
-<p><code class="py comments">#設cp1b=數列</code></p>
-<p><code class="py keyword">for</code> <code class="py plain">line </code><code class="py keyword">in</code> <code class="py plain">urllib.request.urlopen(target_url):</code></p>
-<p><code class="py comments">#重複打開target_url的迴圈定義line</code></p>
-<p><code class="py spaces">    </code><code class="py plain">cp1b.append(</code><code class="py functions">int</code><code class="py plain">(line.decode(</code><code class="py string">'utf-8'</code><code class="py plain">).rstrip()))</code></p>
-<p><code class="py spaces">    </code><code class="py comments">#把line重新編碼加進cp1b(數列)   註:rstrip()刪除字尾符號</code></p>
-<p><code class="py functions">print</code><code class="py plain">(cp1b)</code></p>
-<p><code class="py comments">#印出cp1b</code></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+
+#導入urllib.request
+
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+
+#設target_url = "網址"
+
+cp1b = []
+
+#設cp1b=數列
+
+for line in urllib.request.urlopen(target_url):
+
+#重複打開target_url的迴圈定義line
+
+    cp1b.append(int(line.decode('utf-8').rstrip()))
+
+    #把line重新編碼加進cp1b(數列)   註:rstrip()刪除字尾符號
+
+print(cp1b)
+
+#印出cp1b</pre>
+<p><br/><br/></p>
 <div class="line number12 index11 alt1"><code class="py comments"></code></div>
 <div class="line number12 index11 alt1"><code class="py comments"></code></div>
 <div class="line number12 index11 alt1"><code class="py comments"></code></div>
 <h4 class="line number12 index11 alt1"><code class="py comments">結果</code></h4>
-<p><code class="py comments"><img alt="" src="./../images/index.html"/><img alt="" height="264" src="./../images/擷取.PNG" width="1559"/><br/></code></p>
-</div>
-</div><br />Notebook Features 筆記本功能 << <a href='Notebook Features 筆記本功能.html'>Previous</a> </div>
+<p><code class="py comments"><img alt="" src="./../images/index.html"/><img alt="" height="264" src="./../images/擷取.PNG" width="1559"/><br/></code></p></div></div><br />HW1 << <a href='HW1.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
