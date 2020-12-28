@@ -44,7 +44,7 @@
 <h4><span>PC Hardware</span></h4>
 <p><span>UNIT 5: Notebooks and Laptops<br/><span>PCH 17: Notebook Features and Components 筆記本功能與組件</span></span></p>
 <p><span><span></span></span></p>
-<h2><span><span>Notebook Features and Components 筆記本功能和組件</span></span></h2>
+<h2>Notebook Features and Components 筆記本功能和組件</h2>
 <h4>Overview總覽</h4>
 <p>In this module, we will discuss the terms notebook, laptop, and netbook, and show how all three items are similar in functionality and use.</p>
 <p>在本模塊中，我們將討論筆記本，筆記本電腦和上網本這兩個術語，並說明這三個項目在功能和用途上如何相似。</p>
@@ -120,7 +120,7 @@
 <p> SODIMM is a good option for laptop computers, as it takes up a fraction of the space the dual in-line memory module (DIMM) of a typical desktop computer does.</p>
 <p>SODIMM對於便攜式計算機來說是一個不錯的選擇，因為它僅佔台式計算機雙列直插式內存模塊（DIMM）的一小部分。</p>
 <p><img alt="" height="402" src="/images/image1.png" width="424"/></p>
-<h2><span>Installing and Configuring Laptop Hardware 安裝和配置筆記本電腦硬件</span></h2>
+<h2>Installing and Configuring Laptop Hardware 安裝和配置筆記本電腦硬件</h2>
 <p>As a technician, you will be required to install and configure laptop hardware.</p>
 <p>作為技術人員，您將需要安裝和配置筆記本電腦硬件。</p>
 <p>PC laptop manufacturers publish specification manuals as well as a variety of service manuals online that can help you install and configure laptop hardware.</p>
@@ -298,7 +298,7 @@
 </tbody>
 </table>
 <p></p>
-<h2><span>Notebook Features 筆記本功能</span></h2>
+<h2>Notebook Features 筆記本功能</h2>
 <p><br/>Notebook keyboards have special function keys that do not exist on standard desktop keyboards.</p>
 <p>筆記本電腦鍵盤具有標準台式機鍵盤上不存在的特殊功能鍵。</p>
 <p> Notice that in the image below, you can see the special blue icons on the keyboard, especially on the arrow keys and function keys.</p>
@@ -708,7 +708,7 @@
 <p></p>
 <h1>HW2</h1>
 <h4>一乙數列</h4>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
 
 #導入urllib.request
 
@@ -731,9 +731,75 @@ for line in urllib.request.urlopen(target_url):
 print(cp1b)
 
 #印出cp1b</pre>
-<p><br/><br/></p>
-<div class="line number12 index11 alt1"><code class="py comments"></code></div>
-<div class="line number12 index11 alt1"><code class="py comments"></code></div>
-<div class="line number12 index11 alt1"><code class="py comments"></code></div>
+<p></p>
+<h4 class="line number12 index11 alt1"><code class="py comments"><span>&gt;&gt;</span><span>&gt;[40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]</span></code></h4>
 <h4 class="line number12 index11 alt1"><code class="py comments">結果</code></h4>
-<p><code class="py comments"><img alt="" src="/images/index.html"/><img alt="" height="264" src="/images/擷取.PNG" width="1559"/><br/></code></p>
+<p><code class="py comments"><img alt="" height="325" src="/images/擷取2.PNG" width="1920"/></code></p>
+<p><code class="py comments"><img alt="" src="/images/index.html"/></code>步驟</p>
+<p>1.導入物件</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request</pre>
+<p>2.<span>設url(要打開的網址)</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</pre>
+<p>3.設數列</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">cp1b = []</pre>
+<p>4.設line為打開url的迴圈，並且使數列cp1b增加編碼後的line，最後刪除字尾符號</p>
+<div>
+<div class="syntaxhighlighter py" id="highlighter_208112">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">for line in urllib.request.urlopen(target_url):
+cp1b.append(int(line.decode('utf-8').rstrip()))</pre>
+</div>
+</div>
+<div>5.印出1b的數列</div>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">print(cp1b)</pre>
+<h4><br/>分組</h4>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from random import shuffle #從隨機導入洗牌
+list ＃清單 = [40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]
+shuffle(list) ＃隨機出現（列表）
+n = 5 ＃數量(分組)
+m = int(len(list)/n) ＃int（len（清單）/ n）
+list2 = [] ＃清單2 = [] 
+for i in range(0, len(list),m): ＃在範圍內(0, len(list), m): 
+list2.append(list[i:i+m]) ＃清單2.附加(清單[i:i+m])
+print(list2) ＃顯示出來（清單2）</pre>
+<p><span>&gt;&gt;&gt;[[40923211, 40923242, 40923239, 40923250, 40923253, 40923210, 40923226, 40923240, 40923243, 40923225, 40923219], [40923218, 40923251, 40523148, 40923208, 40923214, 40923213, 40923207, 40523138, 40923224, 40823152, 40923232], [40923249, 40923234, 40923252, 40923245, 40923221, 40923203, 40923220, 40923205, 40923206, 40923238, 40923212], [40923228, 40923209, 40923204, 40923231, 40923216, 40823148, 40923244, 40923233, 40923246, 40923237, 40923230], [40923202, 40923223, 40923236, 40923247, 40923229, 40923201, 40728238, 40723217, 40923217, 40923227, 40923241], [40923248, 40923235]]</span></p>
+<p><span></span></p>
+<h4><span>整合</span></h4>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+cp1b = []
+for line in urllib.request.urlopen(target_url):
+cp1b.append(int(line.decode('utf-8').rstrip()))
+from random import shuffle
+shuffle(cp1b)
+n = 5
+m = int(len(cp1b)/n)
+list2 = []
+for i in range(0,len(cp1b),m):
+list2.append(cp1b[i:i+m])
+print(list2)</pre>
+<p><span>&gt;&gt;</span><span><span>&gt;</span></span><span>[[40923243, 40923250, 40923205, 40923245, 40923220, 40723217, 40728238, 40923208, 40923248, 40923209, 40923238], [40923240, 40923217, 40923201, 40923204, 40923212, 40923229, 40923219, 40923202, 40923227, 40923233, 40923234], [40923242, 40923211, 40923223, 40923231, 40923224, 40923207, 40923226, 40923253, 40823148, 40923232, 40923247], [40523148, 40523138, 40923213, 40923252, 40823152, 40923249, 40923228, 40923235, 40923218, 40923241, 40923206], [40923251, 40923239, 40923216, 40923203, 40923214, 40923237, 40923225, 40923230, 40923210, 40923244, 40923221], [40923236, 40923246]]</span></p>
+</div>
+</div>
+<p><span></span></p>
+<h4>產生W3網頁html</h4>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#繼2-1
+import urllib.request
+url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
+cp1b = []
+for line in urllib.request.urlopen(url):
+    cp1b.append(int(line.decode('utf-8').rstrip()))
+print(cp1b)
+print("共" + str(len(cp1b)) + "筆")
+#帶入陳述句
+def site(num):
+    print("https://github.com/" + str(num) + "/cp2020")
+#將cp1b的數帶入陳述句
+for num in cp1b:
+    site(num)</pre>
+<p><img alt="" height="733" src="/images/擷取1.PNG" width="396"/></p>
+<p></p>
+<p></p>
+</div>
