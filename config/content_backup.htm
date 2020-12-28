@@ -708,7 +708,7 @@
 <p></p>
 <h1>HW2</h1>
 <h4>一乙數列</h4>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
 
 #導入urllib.request
 
@@ -733,27 +733,28 @@ print(cp1b)
 #印出cp1b</pre>
 <p></p>
 <h4 class="line number12 index11 alt1"><code class="py comments"><span>&gt;&gt;</span><span>&gt;[40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]</span></code></h4>
+<p><code class="py comments"><span></span></code></p>
 <h4 class="line number12 index11 alt1"><code class="py comments">結果</code></h4>
 <p><code class="py comments"><img alt="" height="325" src="/images/擷取2.PNG" width="1920"/></code></p>
 <p><code class="py comments"><img alt="" src="/images/index.html"/></code>步驟</p>
 <p>1.導入物件</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import urllib.request</pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request</pre>
 <p>2.<span>設url(要打開的網址)</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"</pre>
 <p>3.設數列</p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cp1b = []</pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">cp1b = []</pre>
 <p>4.設line為打開url的迴圈，並且使數列cp1b增加編碼後的line，最後刪除字尾符號</p>
 <div>
 <div class="syntaxhighlighter py" id="highlighter_208112">
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">for line in urllib.request.urlopen(target_url):
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">for line in urllib.request.urlopen(target_url):
 cp1b.append(int(line.decode('utf-8').rstrip()))</pre>
 </div>
 </div>
 <div>5.印出1b的數列</div>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">print(cp1b)</pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">print(cp1b)</pre>
 <h4><br/>分組</h4>
 <div class="line number1 index0 alt2">
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from random import shuffle #從隨機導入洗牌
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from random import shuffle #從隨機導入洗牌
 list ＃清單 = [40523138, 40523148, 40723217, 40728238, 40823148, 40823152, 40923201, 40923202, 40923203, 40923204, 40923205, 40923206, 40923207, 40923208, 40923209, 40923210, 40923211, 40923212, 40923213, 40923214, 40923216, 40923217, 40923218, 40923219, 40923220, 40923221, 40923223, 40923224, 40923225, 40923226, 40923227, 40923228, 40923229, 40923230, 40923231, 40923232, 40923233, 40923234, 40923235, 40923236, 40923237, 40923238, 40923239, 40923240, 40923241, 40923242, 40923243, 40923244, 40923245, 40923246, 40923247, 40923248, 40923249, 40923250, 40923251, 40923252, 40923253]
 shuffle(list) ＃隨機出現（列表）
 n = 5 ＃數量(分組)
@@ -766,7 +767,7 @@ print(list2) ＃顯示出來（清單2）</pre>
 <p><span></span></p>
 <h4><span>整合</span></h4>
 <div class="line number1 index0 alt2">
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
 target_url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
 cp1b = []
 for line in urllib.request.urlopen(target_url):
@@ -785,7 +786,7 @@ print(list2)</pre>
 <p><span></span></p>
 <h4>產生W3網頁html</h4>
 <div class="line number1 index0 alt2">
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">#繼2-1
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#繼2-1
 import urllib.request
 url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0776"
 cp1b = []
