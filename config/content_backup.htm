@@ -822,7 +822,6 @@ for num in cp1b:
 <p></p>
 <p></p>
 <p></p>
-
 <h2>03 List Less Than Ten 列出少於十</h2>
 <p><em>list numbers elements if conditional</em></p>
 <p><em>如果有條件，則列出數字元素</em></p>
@@ -931,8 +930,7 @@ else:
 <p></p>
 <p>What happens if grade is 50? All the conditions are false, so "F" gets printed on the screen. But what if grade is 95? Then all the conditions are true and everything gets printed, right? Nope! What happens is the program goes line by line. The first condition (grade &gt;= 90) is satisfied, so the program enters into the code inside the if statement, executing print("A"). Once code inside a conditional has been executed, the rest of the conditions are skipped and none of the other conditionals are checked.</p>
 <p>如果grade是50，會發生什麼？所有條件均為假，因此"F"將其打印在屏幕上。但是，如果grade是95，該怎麼辦？然後所有條件都成立，一切都打印出來了，對吧？不！程序將逐行執行。滿足第一個條件（等級&gt; = 90），因此程序將輸入if語句內的代碼，執行print("A")。一旦執行了條件語句中的代碼，將跳過其餘條件，並且不檢查其他條件。</p>
-<p></p>
-<p><br/><br/><br/><br/>09 Guessing Game One 猜遊戲一<br/><br/></p>
+<h2><span>09 Guessing Game One 猜遊戲一</span></h2>
 <p><strong>Exercise 9 (and </strong><span><a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html"><strong>Solution</strong></a></span><strong>) </strong></p>
 <p><strong>練習</strong><strong>9</strong><strong>（和</strong><strong><a href="https://www.practicepython.org/solution/2014/04/10/09-guessing-game-one-solutions.html"><span>解決方案</span></a></strong><strong>）</strong></p>
 <p>Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right. (<em>Hint: remember to use the user input lessons from the very </em><span><a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html"><em>first exercise</em></a></span>)</p>
@@ -1086,3 +1084,106 @@ else:
 <p>Functions are a bit strange to deal with at first, but once you master them, they will be your savior in programming. Besides, the whole point of learning programming is abstraction, problem solving, breaking down problems, and that’s exactly what functions are all about.</p>
 <p>函數的作用是包裝我們要重用的一段代碼，對其進行標記，並允許我們相對容易地再次使用它。您可以將變量添加到函數中，以使代碼更加可重用，並且可以將默認參數添加到這些變量中。</p>
 <p>一開始處理函數有點奇怪，但是一旦掌握了這些函數，它們將成為編程的救星。此外，學習編程的重點是抽象，解決問題，分解問題，而這正是功能的全部所在。</p>
+<p></p>
+<h1>錯誤排除</h1>
+<h2>cmsimde錯誤</h2>
+<p>github 送上去的資料沒有綠勾，cmsimde開不起來，要刪除cmsimde重新安裝。</p>
+<ol>
+<li>Delete the relevant section from the<span> </span><code>.gitmodules</code><span> </span>file.</li>
+<li>Stage the<span> </span><code>.gitmodules</code><span> </span>changes:<code>git add .gitmodules</code></li>
+<li>Delete the relevant section from<span> </span><code>.git/config</code>.</li>
+<li>Remove the submodule files from the working tree and index:<code>git rm --cached path_to_submodule</code><span> </span>(no trailing slash).</li>
+<li>Remove the submodule's<span> </span><code>.git</code><span> </span>directory:<code>rm -rf .git/modules/path_to_submodule</code></li>
+<li>Commit the changes:<code>git commit -m "Removed submodule &lt;name&gt;"</code></li>
+<li>Delete the now untracked submodule files:<code>rm -rf path_to_submodule</code></li>
+</ol>
+<p>步驟</p>
+<p>1.把cp2020的<code>.gitmodules</code> 刪掉</p>
+<p>2.打<span>git add .gitmodules指令</span></p>
+<p><span>3.打git rm --cached cmsimde</span></p>
+<p><span>4.打rm -rf .git/modules/path_to_submodule #無法用rm，直接進到cp2020/.git檔/modules/刪掉cmsimde資料夾</span></p>
+<p><span>5.打git commit -m "cmsimde"</span></p>
+<p><span>6.打rm -rf path_to_submodule #無法用rm，直接進到cp2020刪掉cmsimde資料夾</span></p>
+<p>7.git submodule add<span> </span><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a></p>
+<p>8.git add .</p>
+<p>9.git commit -m "name"</p>
+<p>10.git push</p>
+<p>常用指令</p>
+<p>git version /檢查git</p>
+<p>path /目前命令列的指令</p>
+<p>git clone /複製遠端的內容下載</p>
+<p>git submodule add https://github.com/mdecourse/cmsimde.git cmsimde /建立cmsimde目錄已子模組存在加進來從網址下載</p>
+<p>git config --global http.proxy http://[2001:288:6004:17::69]:3128 /設定proxy</p>
+<p>git config --global user.name "40823152" /設定身份名子</p>
+<p>git config --global user.email "40823152@mde.nfu.edu.tw" /設定身份信箱</p>
+<p>python wsgi.py /用python執行動態網頁</p>
+<p>git add . /增加所做的是納入進去</p>
+<p>git commit -m "名稱" /設定標籤名子</p>
+<p>git push /推送資料</p>
+<p>git pull</p>
+<p>git clone --recurese-submadules 網址</p>
+<p>git remote add gitlab</p>
+<p>git push gitlab 網址</p>
+<p></p>
+<h1>SSH</h1>
+<p><strong>為什麼要使用SSH?</strong></p>
+<p>不使用SSH時，在git push至倉儲必須輸入密碼，然而，在公開場所輸入密碼顯然是件高風險的事!</p>
+<p>因此，藉由在本地跟遠端倉儲存入密鑰，在git push時即可藉由密鑰做身分認證，不必在每次推送時，還需要輸入密碼，大大減少曝光風險。</p>
+<p></p>
+<p><strong>如何使用SSH?</strong></p>
+<p><strong></strong></p>
+<p>step1.</p>
+<p>進入shell環境</p>
+<p><img alt="" height="299" src="/images/下載.jpg" width="573"/></p>
+<p><strong></strong></p>
+<p></p>
+<p>step2.</p>
+<p>使用以下指令創建key</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ssh-keygen -t rsa -b 4096 -C "使用者學號"</pre>
+<p><span>並確定是否成功創建</span><br/><br/></p>
+<p><img alt="" height="262" src="/images/下載.png" width="607"/></p>
+<p></p>
+<p>step3.</p>
+<p>利用Putty中的<span>puttygen.exe 將id_rsa解讀成private key</span></p>
+<p><span><img alt="" height="372" src="/images/1.PNG" width="408"/></span></p>
+<p></p>
+<p>step4.</p>
+<p>進入倉儲頁面，點選setting，進入SSH &amp; GPG keys中點選New SSH key,將public key存入遠端倉儲</p>
+<p><img alt="" height="447" src="/images/未命名.png" width="794"/></p>
+<p></p>
+<p>step5.</p>
+<p>編譯start.bat，加入以下</p>
+<p></p>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set GIT_HOME=%Disk%:\portablegit\bin\
+set GIT_SSH=%Disk%:\putty\plink.exe</pre>
+<p></p>
+<p>step6.</p>
+<p>編譯.git下的config，使其變為SSH認證</p>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">[core]
+    repositoryformatversion = 0
+    filemode = false
+    bare = false
+    logallrefupdates = true
+    symlinks = false
+    ignorecase = true
+[submodule]
+    active = .
+[remote "origin"]
+    #url = https://github.com/mdecourse/cad2020.git
+    url = git@github.com:mdecourse/cad2020.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+[submodule "cmsimde"]
+    url = https://github.com/mdecourse/cmsimde.git
+</pre>
+<p>final step</p>
+<p>進入<span>putty.exe，將本地的private key做login</span></p>
+<p><span><img alt="" height="342" src="/images/2.PNG" width="377"/></span></p>
+<img alt="" height="339" src="/images/3.PNG" width="376"/></div>
+</div>
+<p><span>*完成後請測試推送，成功使用SSH推送後，倉儲的SSH頁面的鑰匙會變成綠色的，並在下方顯示推送日期</span></p>
+<p><span></span></p>
