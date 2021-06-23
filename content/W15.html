@@ -133,69 +133,14 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">cmsimde錯誤 << <a href='cmsimde錯誤.html'>Previous</a> <a href='心得與評分.html'>Next</a> >> 心得與評分<br /><h1>SSH</h1>
-<p><strong>為什麼要使用SSH?</strong></p>
-<p>不使用SSH時，在git push至倉儲必須輸入密碼，然而，在公開場所輸入密碼顯然是件高風險的事!</p>
-<p>因此，藉由在本地跟遠端倉儲存入密鑰，在git push時即可藉由密鑰做身分認證，不必在每次推送時，還需要輸入密碼，大大減少曝光風險。</p>
+    <div id="tipue_search_content">W14 << <a href='W14.html'>Previous</a> <a href='錯誤排除.html'>Next</a> >> 錯誤排除<br /><h1>W15</h1>
+<p>第15週自評分數</p>
+<p>老師回答我們課程遇到的問題</p>
+<p>每組錄製30分鐘開會操作影片</p>
 <p></p>
-<p><strong>如何使用SSH?</strong></p>
-<p><strong></strong></p>
-<p>step1.</p>
-<p>進入shell環境</p>
-<p><img alt="" height="299" src="./../images/下載.jpg" width="573"/></p>
-<p><strong></strong></p>
 <p></p>
-<p>step2.</p>
-<p>使用以下指令創建key</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ssh-keygen -t rsa -b 4096 -C "使用者學號"</pre>
-<p><span>並確定是否成功創建</span><br/><br/></p>
-<p><img alt="" height="262" src="./../images/下載.png" width="607"/></p>
 <p></p>
-<p>step3.</p>
-<p>利用Putty中的<span>puttygen.exe 將id_rsa解讀成private key</span></p>
-<p><span><img alt="" height="372" src="./../images/1.PNG" width="408"/></span></p>
-<p></p>
-<p>step4.</p>
-<p>進入倉儲頁面，點選setting，進入SSH &amp; GPG keys中點選New SSH key,將public key存入遠端倉儲</p>
-<p><img alt="" height="447" src="./../images/未命名.png" width="794"/></p>
-<p></p>
-<p>step5.</p>
-<p>編譯start.bat，加入以下</p>
-<p></p>
-<div class="line number1 index0 alt2">
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">set GIT_HOME=%Disk%:\portablegit\bin\
-set GIT_SSH=%Disk%:\putty\plink.exe</pre>
-<p></p>
-<p>step6.</p>
-<p>編譯.git下的config，使其變為SSH認證</p>
-<div class="line number1 index0 alt2">
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">[core]
-    repositoryformatversion = 0
-    filemode = false
-    bare = false
-    logallrefupdates = true
-    symlinks = false
-    ignorecase = true
-[submodule]
-    active = .
-[remote "origin"]
-    #url = https://github.com/mdecourse/cad2020.git
-    url = git@github.com:mdecourse/cad2020.git
-    fetch = +refs/heads/*:refs/remotes/origin/*
-[branch "master"]
-    remote = origin
-    merge = refs/heads/master
-[submodule "cmsimde"]
-    url = https://github.com/mdecourse/cmsimde.git
-</pre>
-<p>final step</p>
-<p>進入<span>putty.exe，將本地的private key做login</span></p>
-<p><span><img alt="" height="342" src="./../images/2.PNG" width="377"/></span></p>
-<img alt="" height="339" src="./../images/3.PNG" width="376"/></div>
-</div>
-<p><span>*完成後請測試推送，成功使用SSH推送後，倉儲的SSH頁面的鑰匙會變成綠色的，並在下方顯示推送日期</span></p>
-<p><span></span></p>
-<br />cmsimde錯誤 << <a href='cmsimde錯誤.html'>Previous</a> <a href='心得與評分.html'>Next</a> >> 心得與評分</div>
+<br />W14 << <a href='W14.html'>Previous</a> <a href='錯誤排除.html'>Next</a> >> 錯誤排除</div>
         
     <!-- footer -->
       <div class="container">
