@@ -1,5 +1,3 @@
-git config --global http.proxy http://[2001:b011:b806:3700:d09c:33a:5f4:ac73]
-
 git config --global user.name "40523148"
 
 git config --global user.email "40523148@gm.nfu.edu.tw"
